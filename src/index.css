@@ -10,3 +10,15 @@
     opacity: 0;
   }
 }
+
+@font-face {
+  font-family: "LoveFont";
+  src: url("./assets/fonts/BabySparkle.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@layer base {
+  .font-love {
+    font-family: "LoveFont", sans-serif;
+  }
+}

@@ -69,12 +69,10 @@ function OurNote() {
 
   return (
     <div className="w-full text-center">
-      <h2 className="text-2xl font-bold text-[#be0000] my-10">
-         OUR NOTE
-      </h2>
+      <h2 className="text-2xl font-bold text-[#be0000] my-10">📓 OUR NOTE</h2>
 
       {/* grid الصور */}
-<div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
+      <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
         {images.map((img, i) => (
           <img
             key={i}

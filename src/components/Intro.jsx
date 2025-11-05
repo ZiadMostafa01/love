@@ -16,10 +16,10 @@ function Intro() {
 
   return (
     <div className="flex flex-col items-center justify-center h-full text-center text-white">
-      <h1 className="text-4xl font-bold mb-4 animate-fadeIn">
+      <h1 className="text-2xl sm:text-4xl font-bold mb-4 animate-fadeIn">
         ❤️ Welcome My Love ❤️
       </h1>
-      <p className="text-2xl font-bold animate-pulse">
+      <p className="text-xl sm:text-2xl font-bold animate-pulse">
         Every moment with you is a beautiful story...
       </p>
     </div>
