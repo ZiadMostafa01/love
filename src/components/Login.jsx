@@ -9,7 +9,7 @@ function Login() {
 
   const handleLogin = (e) => {
     e.preventDefault();
-    if (password === "admin") {
+    if (password === "rody") {
       navigate("/intro");
     } else {
       setError("كلمة السر غير صحيحة ⚠️");
