@@ -10,10 +10,10 @@ function MainLayout() {
     >
       <div className="flex flex-wrap justify-between gap-5 mb-5">
         <button
-          onClick={() => navigate("/main/note")}
+          onClick={() => navigate("/main/loveletter")}
           className="w-full cursor-pointer bg-[#ff435f] text-white py-2 rounded-md hover:bg-[#cf2841] transition duration-300"
         >
-          Note
+          Love Letter
         </button>
         <button
           onClick={() => navigate("/main/music")}
@@ -21,11 +21,12 @@ function MainLayout() {
         >
           Music
         </button>
+
         <button
-          onClick={() => navigate("/main/love")}
+          onClick={() => navigate("/main/ournote")}
           className="w-full cursor-pointer bg-[#ff435f] text-white py-2 rounded-md hover:bg-[#cf2841] transition duration-300"
         >
-          Love Letter
+          Our Note
         </button>
         <button
           onClick={() => navigate("/main/gallery")}
