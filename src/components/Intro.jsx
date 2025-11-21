@@ -8,7 +8,7 @@ function Intro() {
     // بعد 5 ثواني هيوديك على الصفحة الرئيسية
     const timer = setTimeout(() => {
       navigate("/main"); // ممكن تغيرها لأي مسار تاني
-    }, 2000);
+    }, 3000);
 
     // تنظيف التايمر لما الصفحة تتقفل
     return () => clearTimeout(timer);
