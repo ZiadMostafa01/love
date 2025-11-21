@@ -10,12 +10,12 @@
     "preview": "vite preview",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
-
   },
   "homepage": "https://ziadmostafa01.github.io/love",
   "dependencies": {
     "@tailwindcss/vite": "^4.1.16",
     "react": "^19.1.1",
+    "react-chrono": "^3.2.1",
     "react-dom": "^19.1.1",
     "react-router-dom": "^7.9.5",
     "tailwindcss": "^4.1.16"

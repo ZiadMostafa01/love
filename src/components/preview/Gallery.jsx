@@ -1,22 +1,26 @@
 import { useState } from "react";
 import { createPortal } from "react-dom";
 
-import img1 from "../assets/images/note/1.jpg";
-import img2 from "../assets/images/note/2.jpg";
-import img3 from "../assets/images/note/3.jpg";
-import img4 from "../assets/images/note/4.jpg";
-import img5 from "../assets/images/note/5.jpg";
-import img6 from "../assets/images/note/6.jpg";
-import img7 from "../assets/images/note/7.jpg";
-import img8 from "../assets/images/note/8.jpg";
-import img9 from "../assets/images/note/9.jpg";
-import img10 from "../assets/images/note/10.jpg";
-import img11 from "../assets/images/note/11.jpg";
-import img12 from "../assets/images/note/12.jpg";
-import img13 from "../assets/images/note/13.jpg";
-import img14 from "../assets/images/note/14.jpg";
+import img1 from "../../assets/images/gallery/1.jpg";
+import img2 from "../../assets/images/gallery/2.jpg";
+import img3 from "../../assets/images/gallery/3.jpg";
+import img4 from "../../assets/images/gallery/4.jpg";
+import img5 from "../../assets/images/gallery/5.jpg";
+import img6 from "../../assets/images/gallery/6.jpg";
+import img7 from "../../assets/images/gallery/7.jpg";
+import img8 from "../../assets/images/gallery/8.jpg";
+import img9 from "../../assets/images/gallery/9.jpg";
+import img10 from "../../assets/images/gallery/10.jpg";
+import img11 from "../../assets/images/gallery/11.jpg";
+import img12 from "../../assets/images/gallery/12.jpg";
+import img13 from "../../assets/images/gallery/13.jpg";
+import img14 from "../../assets/images/gallery/14.jpg";
+import img15 from "../../assets/images/gallery/15.jpg";
+import img16 from "../../assets/images/gallery/16.jpg";
+import img17 from "../../assets/images/gallery/17.jpg";
+import img18 from "../../assets/images/gallery/18.jpg";
 
-function OurNote() {
+function Gallery() {
   const images = [
     {
       src: img1,
@@ -62,6 +66,18 @@ function OurNote() {
     {
       src: img14,
     },
+    {
+      src: img15,
+    },
+    {
+      src: img16,
+    },
+    {
+      src: img17,
+    },
+    {
+      src: img18,
+    },
   ];
 
   const [open, setOpen] = useState(false); // حالة المودال
@@ -69,10 +85,12 @@ function OurNote() {
 
   return (
     <div className="w-full text-center">
-      <h2 className="text-2xl font-bold text-[#be0000] my-10">📓 OUR NOTE</h2>
+      <h2 className="text-2xl font-bold text-[#be0000] my-10">
+        📸 OUR GALLERY
+      </h2>
 
       {/* grid الصور */}
-      <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
+      <div className="columns-2 sm:columns-3 gap-4 space-y-4">
         {images.map((img, i) => (
           <img
             key={i}
@@ -125,4 +143,4 @@ function OurNote() {
   );
 }
 
-export default OurNote;
+export default Gallery;

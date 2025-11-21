@@ -1,13 +1,12 @@
 import { Routes, Route } from "react-router-dom";
-import Layout from "./components/Layout";
+import Layout from "./layouts/Layout";
+import MainLayout from "./layouts/MainLayout";
 import Login from "./components/Login";
 import Intro from "./components/Intro";
-import MainLayout from "./components/MainLayout";
-import Note from "./components/Note";
-import Music from "./components/Music";
-import LoveLetter from "./components/LoveLetter";
-import Gallery from "./components/Gallery";
-import OurNote from "./components/OurNote";
+import Music from "./components/preview/Music";
+import LoveLetter from "./components/preview/LoveLetter";
+import Gallery from "./components/preview/Gallery";
+import OurNote from "./components/preview/OurNote";
 
 function App() {
   return (
@@ -20,7 +19,6 @@ function App() {
 
         {/* Main Layout */}
         <Route path="/main" element={<MainLayout />}>
-          <Route path="note" element={<Note />} />
           <Route path="music" element={<Music />} />
           <Route path="loveletter" element={<LoveLetter />} />
           <Route path="gallery" element={<Gallery />} />

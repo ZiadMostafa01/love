@@ -1,5 +1,5 @@
 import { Outlet } from "react-router-dom";
-import FloatingHearts from "./FloatingHearts";
+import FloatingHearts from "../components/FloatingHearts";
 
 function Layout() {
   return (
