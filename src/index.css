@@ -22,3 +22,37 @@
     font-family: "LoveFont", sans-serif;
   }
 }
+@font-face {
+  font-family: "Timer";
+  src: url("./assets/fonts/GoodVibrations.ttf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@layer base {
+  .font-timer {
+    font-family: "Timer", sans-serif;
+  }
+}
+
+
+@layer utilities {
+  .animate-border {
+    background: linear-gradient(
+      90deg,
+      #ff4f6a,
+      #ffa2a2,
+      #ff2445
+    );
+    background-size: 300% 300%;
+    animation: borderMove 4s linear infinite;
+  }
+
+  @keyframes borderMove {
+    0% {
+      background-position: 0% 50%;
+    }
+    100% {
+      background-position: 300% 50%;
+    }
+  }
+}

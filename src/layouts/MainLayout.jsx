@@ -1,7 +1,15 @@
 import { Outlet, useNavigate } from "react-router-dom";
+import { useState } from "react";
+import ElapsedTimer from "../components/Timer";
 
 function MainLayout() {
   const navigate = useNavigate();
+  const [showTimer, setShowTimer] = useState(true);
+
+  const handleNavigate = (path) => {
+    setShowTimer(false);
+    navigate(path);
+  };
 
   return (
     <div
@@ -10,26 +18,26 @@ function MainLayout() {
     >
       <div className="flex flex-wrap justify-between gap-5 mb-5">
         <button
-          onClick={() => navigate("/main/loveletter")}
+          onClick={() => handleNavigate("/main/loveletter")}
           className="w-full cursor-pointer bg-[#ff435f] text-white py-2 rounded-md hover:bg-[#cf2841] transition duration-300"
         >
           Love Letter
         </button>
         <button
-          onClick={() => navigate("/main/music")}
+          onClick={() => handleNavigate("/main/music")}
           className="w-full cursor-pointer bg-[#ff435f] text-white py-2 rounded-md hover:bg-[#cf2841] transition duration-300"
         >
           Music
         </button>
 
         <button
-          onClick={() => navigate("/main/ournote")}
+          onClick={() => handleNavigate("/main/ournote")}
           className="w-full cursor-pointer bg-[#ff435f] text-white py-2 rounded-md hover:bg-[#cf2841] transition duration-300"
         >
           Our Note
         </button>
         <button
-          onClick={() => navigate("/main/gallery")}
+          onClick={() => handleNavigate("/main/gallery")}
           className="w-full cursor-pointer bg-[#ff435f] text-white py-2 rounded-md hover:bg-[#cf2841] transition duration-300"
         >
           Gallery
@@ -37,7 +45,7 @@ function MainLayout() {
       </div>
 
       <div className="flex justify-center items-center flex-grow">
-        <Outlet /> {/* هنا هيظهر المحتوى اللي بيتغير */}
+        {showTimer ? <ElapsedTimer /> : <Outlet />}
       </div>
     </div>
   );
