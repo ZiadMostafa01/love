@@ -31,16 +31,16 @@ function Login() {
           Enter the secret word
         </h2>
         <input
-          type="password"
+          type="text"
           placeholder="Enter Our Secret"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
-          className="border font-love rounded-md px-4 py-2 focus:outline-none focus:border-[#ff6b81] transition duration-300"
+          className="border rounded-md px-4 py-2 focus:outline-none focus:border-[#ff6b81] transition duration-300"
         />
         {error && <p className="text-red-500 text-sm text-center">{error}</p>}
         <button
           type="submit"
-          className="bg-[#ff6b81] text-xl font-love text-white py-2 rounded-md hover:bg-[#e65a70] transition duration-300"
+          className="bg-[#ff6b81] cursor-pointer text-xl font-love text-white py-2 rounded-md hover:bg-[#e65a70] transition duration-300"
         >
           Enter
         </button>
