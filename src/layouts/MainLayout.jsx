@@ -17,34 +17,47 @@ function MainLayout() {
                     bg-white/40 backdrop-blur-md border border-white/30 transition duration-300"
     >
       <div className="flex flex-wrap justify-between gap-5 mb-5">
-        <button
-          onClick={() => handleNavigate("/main/loveletter")}
-          className="w-full cursor-pointer bg-[#ff435f] text-white py-2 rounded-md hover:bg-[#cf2841] transition duration-300"
-        >
-          Love Letter
-        </button>
-        <button
-          onClick={() => handleNavigate("/main/music")}
-          className="w-full cursor-pointer bg-[#ff435f] text-white py-2 rounded-md hover:bg-[#cf2841] transition duration-300"
-        >
-          Music
-        </button>
-
-        <button
-          onClick={() => handleNavigate("/main/ournote")}
-          className="w-full cursor-pointer bg-[#ff435f] text-white py-2 rounded-md hover:bg-[#cf2841] transition duration-300"
-        >
-          Our Note
-        </button>
-        <button
-          onClick={() => handleNavigate("/main/gallery")}
-          className="w-full cursor-pointer bg-[#ff435f] text-white py-2 rounded-md hover:bg-[#cf2841] transition duration-300"
-        >
-          Gallery
-        </button>
+        <div className="w-full" data-aos="fade-down" data-aos-duration="850">
+          {" "}
+          <button
+            onClick={() => handleNavigate("/main/loveletter")}
+            className="w-full cursor-pointer bg-[#ff435f] text-white py-2 rounded-md hover:bg-[#cf2841] transition duration-300"
+          >
+            Love Letter
+          </button>
+        </div>{" "}
+        <div className="w-full" data-aos="fade-down" data-aos-duration="750">
+          {" "}
+          <button
+            onClick={() => handleNavigate("/main/music")}
+            className="w-full cursor-pointer bg-[#ff435f] text-white py-2 rounded-md hover:bg-[#cf2841] transition duration-300"
+          >
+            Music
+          </button>
+        </div>{" "}
+        <div className="w-full" data-aos="fade-down" data-aos-duration="650">
+          {" "}
+          <button
+            onClick={() => handleNavigate("/main/ournote")}
+            className="w-full cursor-pointer bg-[#ff435f] text-white py-2 rounded-md hover:bg-[#cf2841] transition duration-300"
+          >
+            Our Note
+          </button>
+        </div>{" "}
+        <div className="w-full" data-aos="fade-down" data-aos-duration="550">
+          <button
+            onClick={() => handleNavigate("/main/gallery")}
+            className="w-full cursor-pointer bg-[#ff435f] text-white py-2 rounded-md hover:bg-[#cf2841] transition duration-300"
+          >
+            Gallery
+          </button>
+        </div>
       </div>
 
-      <div className="flex justify-center items-center flex-grow">
+      <div
+        className="flex justify-center items-center flex-grow"
+        data-aos="zoom-in"
+      >
         {showTimer ? <ElapsedTimer /> : <Outlet />}
       </div>
     </div>

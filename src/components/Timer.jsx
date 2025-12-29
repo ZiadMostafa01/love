@@ -26,8 +26,8 @@ function ElapsedTimer() {
   }, []);
 
   return (
-    <div className="flex gap-4 text-center text-[#fd3f5b] px-6 py-4 rounded-xl shadow-2xl">
-      <div className="font-bold text-3xl font-timer">
+    <div className="flex gap-4 text-center text-[#fd3f5b] px-6 py-4 hover:scale-105 transition duration-300 rounded-xl shadow-2xl">
+      <div className="font-bold text-2xl sm:text-3xl font-timer ">
         ❤️ We've been together for {time.days} days, {time.hours} hrs,{" "}
         {time.minutes} mins, and {time.seconds} secs ❤️
       </div>

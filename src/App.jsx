@@ -8,6 +8,15 @@ import LoveLetter from "./components/preview/LoveLetter";
 import Gallery from "./components/preview/Gallery";
 import OurNote from "./components/preview/OurNote";
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+AOS.init({
+  duration: 700,
+  once: true,
+  easing: "ease-in-out",
+});
+
 function App() {
   return (
     <Routes>
