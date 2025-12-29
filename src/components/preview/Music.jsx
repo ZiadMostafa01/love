@@ -10,7 +10,9 @@ function Music() {
 
   return (
     <div className="text-center">
-      <h2 className="text-2xl font-bold text-[#be0000] my-10">🎶 OUR MUSIC</h2>
+      <h2 className="text-2xl sm:text-3xl font-caliny font-bold text-[#be0000] my-10">
+        🎶 OUR MUSIC 🎶
+      </h2>
 
       <div className="w-full flex gap-10 flex-wrap justify-center">
         {videos.map((src, index) => (

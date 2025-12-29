@@ -33,6 +33,17 @@
     font-family: "Timer", sans-serif;
   }
 }
+@font-face {
+  font-family: "Caliny";
+  src: url("./assets/fonts/Caliny-Medium.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@layer base {
+  .font-caliny {
+    font-family: "Caliny", sans-serif;
+  }
+}
 
 
 @layer utilities {

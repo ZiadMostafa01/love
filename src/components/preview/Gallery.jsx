@@ -85,8 +85,8 @@ function Gallery() {
 
   return (
     <div className="w-full text-center">
-      <h2 className="text-2xl font-bold text-[#be0000] my-10">
-        📸 OUR GALLERY
+      <h2 className="text-2xl sm:text-3xl font-caliny font-bold text-[#be0000] my-10">
+        📸 OUR GALLERY 📸
       </h2>
 
       {/* grid الصور */}

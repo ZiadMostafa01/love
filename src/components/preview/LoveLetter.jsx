@@ -1,8 +1,8 @@
 function LoveLetter() {
   return (
     <div className="text-center">
-      <h2 className="text-2xl font-bold   text-[#be0000] mb-4">
-        💖 Love Letter
+      <h2 className="text-2xl sm:text-3xl font-caliny font-bold text-[#be0000] my-10">
+        💖 Love Letter 💖
       </h2>
       <div className="font-love text-2xl sm:text-3xl space-y-10">
         <p>

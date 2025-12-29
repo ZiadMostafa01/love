@@ -12,7 +12,7 @@ function Login() {
     if (password === "rody") {
       navigate("/intro");
     } else {
-      setError("كلمة السر غير صحيحة ⚠️");
+      setError(<h1 className="sm:text-lg font-bold">🎨 غلط ركزي شوية يا فنانة</h1>);
     }
   };
 
