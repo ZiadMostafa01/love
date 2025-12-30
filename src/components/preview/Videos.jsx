@@ -1,9 +1,9 @@
 function Videos() {
   const videos = [
     "/love/videos/Recap2025.mp4",
-    "/love/videos/Video1.mp4",
-    "/love/videos/Video2.mp4",
     "/love/videos/Video3.mp4",
+    "/love/videos/Video2.mp4",
+    "/love/videos/Video1.mp4",
   ];
 
   return (
