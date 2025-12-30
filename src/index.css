@@ -10,7 +10,7 @@
     opacity: 0;
   }
 }
-
+/* 
 @font-face {
   font-family: "LoveFont";
   src: url("./assets/fonts/BabySparkle.otf") format("opentype");
@@ -40,6 +40,41 @@
   font-style: normal;
 }
 @layer base {
+  .font-caliny {
+    font-family: "Caliny", sans-serif;
+  }
+} */
+
+@layer base {
+  @font-face {
+    font-family: "LoveFont";
+    src: url("./assets/fonts/BabySparkle.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Timer";
+    src: url("./assets/fonts/GoodVibrations.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Caliny";
+    src: url("./assets/fonts/Caliny-Medium.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  .font-love {
+    font-family: "LoveFont", sans-serif;
+  }
+
+  .font-timer {
+    font-family: "Timer", sans-serif;
+  }
+
   .font-caliny {
     font-family: "Caliny", sans-serif;
   }
