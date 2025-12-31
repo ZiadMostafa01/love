@@ -38,7 +38,7 @@ function MainLayout() {
           {" "}
           <button
             onClick={() => handleNavigate("/main/loveletter")}
-            className="w-full cursor-pointer bg-[#ff435f] text-white py-2 rounded-md hover:bg-[#cf2841] transition duration-300"
+            className="w-full cursor-pointer bg-[#ff435f]  text-white py-2 rounded-md hover:bg-[#cf2841] transition duration-300"
           >
             Love Letter
           </button>
