@@ -17,6 +17,8 @@ import img13 from "../../assets/images/note/13.jpg";
 import img14 from "../../assets/images/note/14.jpg";
 import img15 from "../../assets/images/note/15.jpeg";
 import img16 from "../../assets/images/note/16.jpeg";
+import img17 from "../../assets/images/note/17.jpeg";
+import img18 from "../../assets/images/note/18.jpeg";
 
 function OurNote() {
   const images = [
@@ -69,6 +71,12 @@ function OurNote() {
     },
     {
       src: img16,
+    },
+    {
+      src: img17,
+    },
+    {
+      src: img18,
     },
   ];
 

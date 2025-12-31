@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { createPortal } from "react-dom";
 
+import img0 from "../../assets/images/gallery/0.jpg";
 import img1 from "../../assets/images/gallery/1.jpg";
 import img2 from "../../assets/images/gallery/2.jpg";
 import img3 from "../../assets/images/gallery/3.jpg";
@@ -22,6 +23,9 @@ import img18 from "../../assets/images/gallery/18.jpg";
 
 function Gallery() {
   const images = [
+    {
+      src: img0,
+    },
     {
       src: img1,
     },
