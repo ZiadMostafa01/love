@@ -33,6 +33,7 @@ function MainLayout() {
               d="M500 0c0 28-22 50-50 50 28 0 50 22 50 50 0-28 22-50 50-50-28 0-50-22-50-50ZM620 10c0 22-18 40-40 40 22 0 40 18 40 40 0-22 18-40 40-40-22 0-40-18-40-40ZM380 10c0 22-18 40-40 40 22 0 40 18 40 40 0-22 18-40 40-40-22 0-40-18-40-40ZM720 20c0 17-13 30-30 30 17 0 30 13 30 30 0-17 13-30 30-30-17 0-30-13-30-30ZM280 20c0 17-13 30-30 30 17 0 30 13 30 30 0-17 13-30 30-30-17 0-30-13-30-30Z"
             ></path>
           </svg>
+          <span className="font-timer text-2xl sm:text-3xl ">Maybe not today, maybe not tomorrow, but one day.</span>
         </div>
         <div className="w-full" data-aos="fade-down" data-aos-duration="850">
           {" "}
